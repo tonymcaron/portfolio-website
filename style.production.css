@@ -98,7 +98,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     float: left;
     margin-right: 40px;
     width: 250px;
-    height: auto;
+    height: 250px;
     border-radius: 50%;
 }
 .page-footer {
