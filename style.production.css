@@ -6,6 +6,7 @@
 */
 
 /* Colors Background color (yellow) #f7ed65 Text color (dark grey) 2b2b2b Old primary color (med olive green) #B8B652 (184, 182, 82) Primary color (dark olive) #6a5b00 (110, 108, 0) Secondary color (light gold) #e0b354 (95, 97, 0) These colors might change due to contrast */
+
 :root {
     --primary-color: #6a5b00;
     --secondary-color: #e0b354;
@@ -13,6 +14,7 @@
     --h-font-weight: 700;
     --h-font-height: 1.4;
 }
+
 body {
     background-color: #f7ed65;
     font-family: "Lato", sans-serif;
@@ -20,46 +22,56 @@ body {
     font-size: 16px;
     line-height: var(--h-font-height);
 }
+
 h1 {
     font-size: 30px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
     margin: 10px;
 }
+
 h2 {
     font-size: 24px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
 }
+
 h3 {
     font-size: 18px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
 }
+
 li {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: italic;
     line-height: 1.2;
 }
+
 a {
     color: var(--primary-color);
 }
+
 a:visited {
    /* visited link */
     color: #05676e;
 }
+
 a:hover, a:focus {
    /* No underlining when hovering over a link */
     text-decoration: none;
 }
+
 a:active {
    /* selected link */
     color: #489c79;
 }
+
 form {
     margin: 10px;
 }
+
 button, .button {
    /* overwrites browser defaults and resets the border */
     border: none;
@@ -80,20 +92,24 @@ button, .button {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     background-color: var(--primary-color);
 }
+
 button:hover, button:focus, .button:hover, .button:focus {
    /* lets mouse appear as HAND when hover/focus over button */
     cursor: pointer;
    /* reduces opacity to 80% when cover/focus */
     opacity: 0.8;
 }
+
 .button__secondary {
     background-color: var(--secondary-color);
     color: var(--dark-grey);
 }
+
 .div__address--spacing {
     line-height: 1.2;
     margin: 10px;
 }
+
 .profile__portrait {
     float: left;
     margin-right: 40px;
@@ -101,6 +117,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     height: auto;
     border-radius: 50%;
 }
+
 .page-footer {
     clear: both;
     display: -webkit-box;
@@ -112,14 +129,17 @@ button:hover, button:focus, .button:hover, .button:focus {
             flex-direction: column;
     text-align: center;
 }
+
 .profile {
     max-width: 700px;
     margin: 0 auto;
 }
+
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,27 +147,33 @@ button:hover, button:focus, .button:hover, .button:focus {
     width: 100%;
     padding: 20px;
 }
+
 .page-header__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 200px;
             flex: 0 1 200px;
 }
+
 .page-header__item:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
 }
+
 .about__content--spacing {
     margin: 10px;
 }
+
 .navigation-list {
     list-style-type: none;
 }
+
 .navigation-list li {
     display: inline-block;
     margin-left: 15px;
 }
+
 .navigation-list__item--active {
     text-decoration: none;
 }
@@ -163,6 +189,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     width: 33%;
     border-radius: 5px;
 }
+
 /* end grid fallback */
 @supports (display: grid) {
     .grid {
@@ -187,18 +214,21 @@ button:hover, button:focus, .button:hover, .button:focus {
         grid-area: 1 / 3 / 3 / 3;
    }
 }
+
 @media all and (max-width: 500px) {
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
    }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
    }
 }
+
 @media all and (max-width: 750px) {
     .grid {
         grid-gap: 10px;
@@ -211,6 +241,7 @@ button:hover, button:focus, .button:hover, .button:focus {
         font-size: 22px;
    }
 }
+
 @-webkit-keyframes color-change {
     0% {
         fill: #edc655;
@@ -222,6 +253,7 @@ button:hover, button:focus, .button:hover, .button:focus {
         fill: #f76414;
    }
 }
+
 @keyframes color-change {
     0% {
         fill: #edc655;
@@ -233,10 +265,12 @@ button:hover, button:focus, .button:hover, .button:focus {
         fill: #f76414;
    }
 }
+
 .sun {
     -webkit-animation: 4s color-change infinite alternate linear;
             animation: 4s color-change infinite alternate linear;
 }
+
 @-webkit-keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
@@ -247,6 +281,7 @@ button:hover, button:focus, .button:hover, .button:focus {
                 transform: translate(200px, 50px);
    }
 }
+
 @keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
@@ -257,10 +292,12 @@ button:hover, button:focus, .button:hover, .button:focus {
                 transform: translate(200px, 50px);
    }
 }
+
 .cloud-front {
     -webkit-animation: 30s cloud-move infinite alternate linear;
             animation: 30s cloud-move infinite alternate linear;
 }
+
 @-webkit-keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
@@ -271,6 +308,7 @@ button:hover, button:focus, .button:hover, .button:focus {
                 transform: translate(100px, 48px);
    }
 }
+
 @keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
@@ -281,6 +319,7 @@ button:hover, button:focus, .button:hover, .button:focus {
                 transform: translate(100px, 48px);
    }
 }
+
 .cloud-back {
     -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
             animation: 34s cloud-move-reverse infinite alternate linear;
