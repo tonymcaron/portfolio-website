@@ -151,6 +151,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navigation-list__item--active {
     text-decoration: none;
 }
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
 /* start grid fallback */
 .grid_item {
     display: inline-block;
