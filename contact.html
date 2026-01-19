@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Tony's Portfolio | Contact</title>
     <link rel="shortcut icon" type="image/jpg" href="./img/favicon.jpg">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -34,39 +34,45 @@
                 </li>
                 <li role="presentation">
                     <a href="contact.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Contact</a>
+                        class="navigation-list__item navigation-list__item--active">CONTACT</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <h1>Contact Tony Caron</h1>
-    <div class="div__address--spacing">
-       Mailing address: <br>
-        3507 N Santa Rita Ave <br>
-        Unit 1<br>
-        Tucson, AZ 85719 <br>
-        USA <br>
-        <br>
-        <a href="tel:18017919906">Tel: 801-791-9906</a> <br>
-        <a href="mailto:tonymcaron@gmail.com">tonymcaron(at)gmail(dot)com</a><br>
-        <a href="mailto:tonymcaron@gmail.com">Contact me</a>
-    </div><br>
 
-    <form action="" method="post" id="contact-form">
-        <p>
-            <label class="standard-label" for="contact-email">Email: </label><br>
-            <input type="email" id="contact-email">
-        </p>
-        <p>
-            <label class="standard-label" for="contact-phone">Telephone: </label><br>
-            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-        </p>
-        <p>
-            <label class="standard-label" for="message-input">Message: (Max 240 characters)</label><br>
-            <textarea maxlength="240" id="message-input" required></textarea>
-        </p>
-        <input type="submit" value="Send Message">
-    </form>
+    <main class="contact__main">
+        <h1 class="contact-header">Get in touch</h1>
+        <div class="div__address">
+            <p>Please feel free to contact me by phone, email, or by filling out the form below</p>
+            <a href="tel:18017919906">Tel: 801-791-9906</a> <br>
+            <a href="mailto:tonymcaron@gmail.com">tonymcaron@gmail.com (ADD FUNCTIONALITY TO EMAIL LINK)</a><br>
+            <a href="https://github.com/tonymcaron">github.com/tonymcaron</a>
+        </div>
+        <h3>Contact Form (ADD FUNCTIONALITY TO FORM BELOW)</h3>
+        <form action="" method="post" id="contact-form">
+            <h3>Contact Form (CENTER h3)</h3>
+            <h4>(Add functionality to form) <br>
+                (border radius of 'send' button)
+            </h4>
+            <p>
+                <label class="standard-label" for="contact-name">Name:</label><br>
+                <input type="text">
+            </p>
+            <p>
+                <label class="standard-label" for="contact-email">Email:</label><br>
+                <input type="email" id="contact-email">
+            </p>
+            <p>
+                <label class="standard-label" for="contact-phone">Telephone:</label><br>
+                <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            </p>
+            <p>
+                <label class="standard-label" for="message-input">Message: (Max 500 characters)</label><br>
+                <textarea maxlength="500" id="message-input" required></textarea>
+            </p>
+            <input class="form-submit" type="submit" value="Send Message">
+        </form>
+    </main>
 
     <footer class="page-footer">
         <p>Find me on</p>

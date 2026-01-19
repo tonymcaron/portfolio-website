@@ -5,39 +5,44 @@
 * Browsers: last 2 version
 */
 
-/* Colors Background color (yellow) #f7ed65 Text color (dark grey) 2b2b2b Old primary color (med olive green) #B8B652 (184, 182, 82) Primary color (dark olive) #6a5b00 (110, 108, 0) Secondary color (light gold) #e0b354 (95, 97, 0) These colors might change due to contrast */
+/* Colors 
+Background color (yellow) #f7ed65
+Text color (dark grey) 2b2b2b
+Old primary color (med olive green) #B8B652 (184, 182, 82)
+Primary color (dark olive) #6a5b00 (110, 108, 0)
+Secondary color (light yellow) #f7ed65
+These colors might change due to contrast */
 
 :root {
     --primary-color: #6a5b00;
-    --secondary-color: #e0b354;
+    --secondary-color: #f7ed65;
     --dark-grey: #2b2b2b;
     --h-font-weight: 700;
     --h-font-height: 1.4;
 }
 
 body {
-    background-color: #f7ed65;
+    /* background-color: #f7ed65; */
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: var(--h-font-height);
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
-    margin: 10px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: var(--h-font-weight);
     line-height: var(--h-font-height);
 }
@@ -49,103 +54,13 @@ li {
     line-height: 1.2;
 }
 
-a {
-    color: var(--primary-color);
-}
-
-a:visited {
-   /* visited link */
-    color: #05676e;
-}
-
-a:hover, a:focus {
-   /* No underlining when hovering over a link */
-    text-decoration: none;
-}
-
-a:active {
-   /* selected link */
-    color: #489c79;
-}
-
-form {
-    margin: 10px;
-}
-
-button, .button {
-   /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-   /* takes font from the outer container */
-    font-family: inherit;
-   /* styles font color and text decoration (inderline, etc) of the button */
-    color: white;
-    text-decoration: none;
-   /* adds spacing to the button (more on this later) */
-    padding: 10px;
-   /* adds radius to button corners */
-    border-radius: 3px;
-   /* adds tranistion to buttons */
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-   /* gives bottom border a width, type and color in RGBA */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    background-color: var(--primary-color);
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
-   /* lets mouse appear as HAND when hover/focus over button */
-    cursor: pointer;
-   /* reduces opacity to 80% when cover/focus */
-    opacity: 0.8;
-}
-
-.button__secondary {
-    background-color: var(--secondary-color);
-    color: var(--dark-grey);
-}
-
-.div__address--spacing {
-    line-height: 1.2;
-    margin: 10px;
-}
-
-.profile__portrait {
-    float: left;
-    margin-right: 40px;
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-}
-
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 20px;
+    color: #6a5b00;
 }
 
 .page-header__item {
@@ -161,8 +76,155 @@ button:hover, button:focus, .button:hover, .button:focus {
     text-align: right;
 }
 
-.about__content--spacing {
-    margin: 10px;
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover, a:focus {
+   /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+   /* selected link */
+    color: #489c79;
+}
+
+button, .button {
+   /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+   /* takes font from the outer container */
+    font-family: inherit;
+   /* styles font color and text decoration (inderline, etc) of the button */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+   /* adds spacing to the button (more on this later) */
+    padding: 10px;
+   /* adds radius to button corners */
+    border-radius: 3px;
+   /* adds tranistion to buttons */
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+   /* gives bottom border a width, type and color in RGBA */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+   /* cursor appears as HAND */
+    cursor: pointer;
+   /* reduces opacity to 80% */
+    opacity: 0.8;
+    /* increase button size */
+    transform: scale(1.05);
+}
+
+.button__secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-grey);
+}
+
+.profile__portrait {
+    /* float: left; */
+    margin-right: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* -webkit-box-align: center; */
+}
+
+.profile__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+table {
+    margin-top: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #afa953;
+}
+
+th {
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f7ed65;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #f5f1ba;
+}
+
+tbody {
+    /* text-align: center; */
+}
+
+main {
+    display: block;
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: black; */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contact-main {
+    /* max-width: 1500px; */
+    /* max-width: 60%; */
+}
+
+form {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+.form-submit {
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.div__address {
+    line-height: 1.5;
 }
 
 .navigation-list {
@@ -172,6 +234,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 .navigation-list li {
     display: inline-block;
     margin-left: 15px;
+}
+
+.navigation-list__item {
+    font-size: 24px;
 }
 
 .navigation-list__item--active {
@@ -206,7 +272,7 @@ button:hover, button:focus, .button:hover, .button:focus {
         min-height: auto;
         margin: 0;
         padding: 5px;
-        border: 2px solid var(--primary-color);
+        border: 3px solid var(--primary-color);
         border-radius: 10px;
    }
     .grid__item:last-child {
@@ -215,21 +281,43 @@ button:hover, button:focus, .button:hover, .button:focus {
    }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 480px) {
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
    }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 480px) and (max-width: 768px) {
     .grid {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
    }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 576px) {
+    .profile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        max-width: 500px;
+    }
+    .profile__portrait {
+        margin-right: 0px;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+    .profile__portrait {
+        margin-right: 10px;
+        /* float: left; */
+        align-items: normal;
+    }
+}
+
+@media all and (max-width: 768px) {
     .grid {
         grid-gap: 10px;
    }
@@ -237,90 +325,36 @@ button:hover, button:focus, .button:hover, .button:focus {
         grid-column: auto / auto;
         grid-row: auto / auto;
    }
-    h1 {
-        font-size: 22px;
+   h1 {
+        font-size: 24px;
    }
+   h3 {
+        font-size: 18px;
+   }
+   button, .button {
+        margin: 20px; 
+   }
+   .profile__portrait {
+        width: 180px;
+        height: 180px;
+   }
+   .profile {
+        max-width: 600px;
+   }
+   main {
+        margin: 0 50px;
+    }
 }
 
-@-webkit-keyframes color-change {
-    0% {
-        fill: #edc655;
-   }
-    50% {
-        fill: #fcffad;
-   }
-    100% {
-        fill: #f76414;
-   }
-}
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-   }
-    50% {
-        fill: #fcffad;
-   }
-    100% {
-        fill: #f76414;
-   }
-}
-
-.sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-   }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-   }
-}
-
-@keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-   }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-   }
-}
-
-.cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-   }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-   }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-   }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-   }
-}
-
-.cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+@media all and (min-width: 768) {
+    /* main {
+        max-width: 60%;
+        margin: 0 auto 80px;
+    } */
+    input {
+        width: 50%;
+    }
+    textarea {
+        width: 50%;
+    }
 }
