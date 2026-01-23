@@ -21,12 +21,17 @@ These colors might change due to contrast */
     --h-font-height: 1.4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background-color: #f7ed65; */
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: var(--h-font-height);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -62,6 +67,11 @@ li {
     width: 100%;
     padding: 20px;
     color: #6a5b00;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .page-header__item {
@@ -197,6 +207,36 @@ main {
     /* border-color: black; */
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.pokedex-snip {
+    width: 200px;
+    height: 137px; /* correct ratio of actual screen snip used */
+}
+
+.mongo-snip {
+    width: 200px;
+    height: 109px; /* correct ratio of actual screen snip used */
+}
+
+.meet-snip {
+    width: 200px;
+    height: 150px; /* correct ratio of actual screen snip used */
+}
+
+.client-snip {
+    width: 200px;
+    height: 144px; /* correct ratio of actual screen snip used */
+}
+
+.chat-snip {
+    width: 200px;
+    height: 208px; /* correct ratio of actual screen snip used */
+}
+
+.angular-snip {
+    width: 200px;
+    height: 193px; /* correct ratio of actual screen snip used */
 }
 
 .contact-main {
