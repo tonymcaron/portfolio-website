@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--tertiary-color);
-    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", Georgia, serif;
     font-weight: 400;
     font-size: 18px;
     line-height: var(--h-font-height);
@@ -48,7 +48,6 @@ h3 {
 }
 
 li {
-    font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: italic;
     line-height: 1.2;
@@ -66,11 +65,34 @@ li {
     z-index: 1000;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* font-family: "Lato", sans-serif; */
+    font-family: "PT Sans Narrow", sans-serif;
 }
 
-.page-header__item {
-    width: 200px;
-    height: 200px;
+.navigation__logo {
+    font-size: 30px;
+    margin: 10px 5px;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navigation-list__item {
+    font-size: 20px;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
 }
 
 .page-header__item:last-child {
@@ -90,6 +112,12 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+}
+
+.social-media img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
 }
 
 a {
@@ -307,23 +335,6 @@ main {
     height: auto;
 }
 
-.navigation-list {
-    list-style-type: none;
-}
-
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-.navigation-list__item {
-    font-size: 24px;
-}
-
-.navigation-list__item--active {
-    text-decoration: none;
-}
-
 .error-message {
     color: red;
     font-size: 12px;
@@ -342,15 +353,15 @@ main {
 
 .contact__info-email {
     margin: auto;
-    border-top: 4px double black;
-    border-left: 4px double black;
+    border-top: 5px double black;
+    border-left: 10px double black;
     padding: 15px 0 15px;
 }
 
 .contact__info-linkedin {
     margin: auto;
-    border-bottom: 4px double black;
-    border-right: 4px double black;
+    border-bottom: 5px double black;
+    border-right: 10px double black;
     padding: 15px 0 15px;
 }
 
@@ -408,6 +419,15 @@ main {
 }
 
 @media all and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .navigation__logo {
+        font-size: 25px;
+    }
+    .navigation-list__item {
+        font-size: 16px;
+    }
     .about__header {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -451,6 +471,9 @@ main {
         margin: 0;
         padding: 10px;
     }
+    ul {
+        margin-left: 110px;
+    }
     .contact__main {
         margin: 0;
         padding: 10px;
@@ -466,13 +489,6 @@ main {
     }
     th, td {
         padding: 8px 5px;
-    }
-    .navigation-list__item {
-        font-size: 18px;
-    }
-    .page-header__item {
-        width: 150px;
-        height: 150px;
     }
 }
 
