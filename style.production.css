@@ -47,12 +47,6 @@ h3 {
     text-align: center;
 }
 
-li {
-    font-weight: 600;
-    font-style: italic;
-    line-height: 1.2;
-}
-
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -63,7 +57,7 @@ li {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "PT Sans Narrow", Arial, sans-serif;
 }
@@ -79,6 +73,12 @@ li {
 
 ul {
     padding: 0;
+}
+
+li {
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.2;
 }
 
 .navigation-list li {
@@ -144,7 +144,7 @@ button, .button {
     border: none;
     display: inline-block;
     font-family: inherit;
-    color: var(--secondary-color);
+    color: white;
     text-align: center;
     text-decoration: none;
     padding: 10px;
