@@ -113,10 +113,19 @@ ul {
     text-align: center;
 }
 
+.social-media {
+    font-size: 0;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
 .social-media img {
     height: 30px;
     width: 30px;
     margin: 5px;
+    display: block;
 }
 
 a {
@@ -355,6 +364,12 @@ main {
 }
 
 .contact__info-linkedin {
+    margin: auto;
+    border-left: 10px double black;
+    border-right: 10px double black;
+}
+
+.contact__info-medium {
     margin: auto;
     border-bottom: 5px double black;
     border-right: 10px double black;
