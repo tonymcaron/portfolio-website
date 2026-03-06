@@ -111,6 +111,7 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .social-media {
@@ -364,12 +365,6 @@ main {
 }
 
 .contact__info-linkedin {
-    margin: auto;
-    border-left: 10px double black;
-    border-right: 10px double black;
-}
-
-.contact__info-medium {
     margin: auto;
     border-bottom: 5px double black;
     border-right: 10px double black;
