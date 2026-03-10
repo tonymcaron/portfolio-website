@@ -26,6 +26,11 @@ body {
     line-height: var(--h-font-height);
 }
 
+main {
+    display: block;
+    margin: 0 50px 0 50px;
+}
+
 h1 {
     font-size: 40px;
     font-weight: var(--h-font-weight);
@@ -111,6 +116,11 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-bottom: 30px;
+    margin: 20px auto 0;
+    max-width: 300px;
+    border-top: 2px solid black;
+    border-width
 }
 
 .social-media {
@@ -302,12 +312,10 @@ tbody {
     text-align: center;
 }
 
-main {
-    display: block;
-    /* border-style: solid; */
-    /* border-width: 2px; */
-    /* border-color: black; */
-    margin: 0 50px 0 50px;
+.about__content_close {
+    border-top: 2px solid gray;
+    padding-top: 10px;
+    /* max-width: 500px; */
 }
 
 .pokedex-snip {
@@ -364,12 +372,6 @@ main {
 }
 
 .contact__info-linkedin {
-    margin: auto;
-    border-left: 10px double black;
-    border-right: 10px double black;
-}
-
-.contact__info-medium {
     margin: auto;
     border-bottom: 5px double black;
     border-right: 10px double black;
