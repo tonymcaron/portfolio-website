@@ -116,6 +116,10 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-bottom: 30px;
+    margin: 20px auto 0;
+    max-width: 300px;
+    border-top: 2px solid black;
 }
 
 .social-media {
