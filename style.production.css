@@ -53,19 +53,24 @@ h3 {
     line-height: var(--h-font-height);
     text-align: center;
 }
+p {
+    margin: 28px 0;
+}
 
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
+    /* opacity: 0.95; */
+    /* backdrop-filter: blur(10px); */
     color: var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     font-family: "PT Sans Narrow", Arial, sans-serif;
 }
 
@@ -239,8 +244,8 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 20px;
+    padding: 40px;
     max-width: 800px;
     border-bottom: 2px solid black;
     margin: 0 auto;
@@ -249,11 +254,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 .about__header-title-caption {
     border-left: 4px solid black;
     padding-left: 20px;
+    font-size: 20px;
 }
 
 .about__portrait {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
     -ms-flex-negative: 0;
@@ -325,6 +331,7 @@ tbody {
 .about__skills-container {    
     max-width: var(--max-content);
     margin: 0 auto;
+    padding: 10px 0;
 }
 
 .about__skills-container h3 {
@@ -455,6 +462,36 @@ tbody {
    }
 }
 
+@media all and (max-width: 875px) {
+    .grid {
+        grid-gap: 10px;
+   }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+   }
+   h1 {
+        font-size: 24px;
+   }
+   h3 {
+        font-size: 18px;
+   }
+   button, .button {
+        margin: 20px; 
+   }
+   .profile__portrait {
+        width: 180px;
+        height: 180px;
+   }
+   .profile {
+        max-width: 600px;
+   }
+    .about__portrait {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @media all and (max-width: 768px) {
     body {
         font-size: 16px;
@@ -483,12 +520,12 @@ tbody {
         border-left: none;
         padding-left: 0;
         border-top: 4px solid black;
-        padding-top: 20px;
+        padding-top: 40px;
         max-width: 250px;
      }
     .about__portrait {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
     .about__table-container {
         overflow-x: auto;
@@ -539,8 +576,8 @@ tbody {
         margin-right: 0px;
     }
     .about__portrait {
-        width: 180px;
-        height: 180px
+        width: 250px;
+        height: 250px;
     }
     th, td {
         padding: 8px 4px;
@@ -554,32 +591,6 @@ tbody {
         -ms-flex-align: normal;
         align-items: normal;
     }
-}
-
-@media all and (max-width: 875px) {
-    .grid {
-        grid-gap: 10px;
-   }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-   }
-   h1 {
-        font-size: 24px;
-   }
-   h3 {
-        font-size: 18px;
-   }
-   button, .button {
-        margin: 20px; 
-   }
-   .profile__portrait {
-        width: 180px;
-        height: 180px;
-   }
-   .profile {
-        max-width: 600px;
-   }
 }
 
 @media all and (min-width: 768) {
