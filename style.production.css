@@ -74,10 +74,21 @@ p {
     font-family: "PT Sans Narrow", Arial, sans-serif;
 }
 
+.social-media__header {
+    vertical-align: middle;
+}
+
+.social-media__header img {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    display: block;
+}
+
 .navigation__logo {
     font-size: 30px;
     font-weight: 700;
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
 
 .navigation-list {
@@ -145,8 +156,8 @@ li {
 }
 
 .social-media img {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     margin: 5px;
     display: block;
 }
@@ -296,7 +307,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 40px 0;
     padding: 0 10px;
 }
 
@@ -306,6 +317,7 @@ table {
     box-shadow: 5px 5px 5px #afa953;
     max-width: 700px;
     width: 100%;
+    margin-top: 30px;
 }
 
 th {
