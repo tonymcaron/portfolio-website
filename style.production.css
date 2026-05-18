@@ -493,11 +493,6 @@ tbody {
     margin-top: 4rem;
 }
 
-.error-message {
-    color: red;
-    font-size: 12px;
-}
-
 .contact__main {
     max-width: 700px;
     margin: 0 auto;
@@ -521,6 +516,25 @@ tbody {
     border-bottom: 5px double var(--primary-color);
     border-right: 10px double var(--primary-color);
     padding: 15px 0 15px;
+}
+
+.work-content {
+    padding-bottom: 40px;
+}
+
+.reflections {
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.reflections__text {
+    padding: 0 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
 }
 
 /* start grid fallback */
@@ -562,7 +576,7 @@ tbody {
    }
 }
 
-.pokedex-snip, .mongo-snip, .meet-snip,
+.pokedex-snip, .api-snip, .meet-snip,
 .client-snip, .chat-snip, .angular-snip {
     max-width: 100%;
     height: auto;
